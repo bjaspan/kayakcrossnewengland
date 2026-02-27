@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayak Cross New England | Coming Summer 2026</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .bg-image {
+            /* Replace 'background.png' with the actual image path */
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('background.png');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 1.5rem;
+            /* Replace 'logo.png' with the actual image path */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 1rem;
+            color: #e0e0e0;
+        }
+
+        .cta-button {
+            margin-top: 2rem;
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff5722; /* Safety Orange */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* ACA Logo in the lower left corner */
+        .footer-logo {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-logo:hover {
+            opacity: 1;
+        }
+
+        .aca-img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            /* Prevents the image from looking weird if the file is missing */
+            background: rgba(255,255,255,0.5);
+            border-radius: 4px;
+        }
+
+        .aca-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image">
+        <div class="content-card">
+            <img src="logo.png" alt="Kayak Cross New England Logo" class="logo">
+            <h1>Get Ready to Drop In.</h1>
+            <p>New kayak cross races are coming to New England<br>in the summer of 2026.</p>
+	    <p><small>We won't have a starting gate that cool-looking, though.</small></p>
+        </div>
+    </div>
+
+    <div class="footer-logo">
+        <img src="aca-logo.png" alt="ACA Logo" class="aca-img">
+        <!--<span class="aca-label">Sanctioned Event</span>-->
+    </div>
+
+</body>
+</html>
